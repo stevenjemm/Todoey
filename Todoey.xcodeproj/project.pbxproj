@@ -12,6 +12,7 @@
 		DF0EC97E1FFC988200D971D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF0EC97C1FFC988200D971D0 /* Main.storyboard */; };
 		DF0EC9801FFC988200D971D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF0EC97F1FFC988200D971D0 /* Assets.xcassets */; };
 		DF0EC9831FFC988200D971D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF0EC9811FFC988200D971D0 /* LaunchScreen.storyboard */; };
+		DF9542C120B1F383006F8A92 /* item.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9542C020B1F383006F8A92 /* item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		DF0EC97F1FFC988200D971D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF0EC9821FFC988200D971D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF0EC9841FFC988200D971D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF9542C020B1F383006F8A92 /* item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +57,46 @@
 			isa = PBXGroup;
 			children = (
 				DF0EC9781FFC988200D971D0 /* AppDelegate.swift */,
-				DF0EC97A1FFC988200D971D0 /* TodoListViewController.swift */,
-				DF0EC97C1FFC988200D971D0 /* Main.storyboard */,
-				DF0EC97F1FFC988200D971D0 /* Assets.xcassets */,
-				DF0EC9811FFC988200D971D0 /* LaunchScreen.storyboard */,
+				DF9542C220B1F395006F8A92 /* Data Model */,
+				DF9542C320B1F39F006F8A92 /* Controllers */,
+				DF9542C520B1F3C3006F8A92 /* Views */,
+				DF9542C420B1F3AD006F8A92 /* Supporting Files */,
 				DF0EC9841FFC988200D971D0 /* Info.plist */,
 			);
 			path = Todoey;
+			sourceTree = "<group>";
+		};
+		DF9542C220B1F395006F8A92 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				DF9542C020B1F383006F8A92 /* item.swift */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		DF9542C320B1F39F006F8A92 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DF0EC97A1FFC988200D971D0 /* TodoListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DF9542C420B1F3AD006F8A92 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF0EC97F1FFC988200D971D0 /* Assets.xcassets */,
+				DF0EC9811FFC988200D971D0 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DF9542C520B1F3C3006F8A92 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DF0EC97C1FFC988200D971D0 /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,7 +126,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0910;
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Steven Jemmott";
 				TargetAttributes = {
 					DF0EC9741FFC988200D971D0 = {
@@ -137,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF0EC97B1FFC988200D971D0 /* TodoListViewController.swift in Sources */,
+				DF9542C120B1F383006F8A92 /* item.swift in Sources */,
 				DF0EC9791FFC988200D971D0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -177,6 +213,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -184,6 +221,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -234,6 +272,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -241,6 +280,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -275,7 +315,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2YHRATULX9;
+				DEVELOPMENT_TEAM = 3552947V4D;
 				INFOPLIST_FILE = Todoey/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "SJemm-Designs.Todoey";
@@ -290,7 +330,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2YHRATULX9;
+				DEVELOPMENT_TEAM = 3552947V4D;
 				INFOPLIST_FILE = Todoey/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "SJemm-Designs.Todoey";
